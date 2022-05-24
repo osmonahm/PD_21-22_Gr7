@@ -71,6 +71,9 @@
             <br><br><br><br><br><br><br><br><br><br>
            <footer class="footer"> 
                <div class="container">
+               <center>
+                   <p>Copyright &copy PhoneShop. All Rights Reserved. | Contact Us: +383 999 999</p>
+               </center>
                </div>
            </footer>
         </div>

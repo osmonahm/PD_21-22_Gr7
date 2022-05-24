@@ -240,10 +240,3 @@
     </div>
 </div>
 </div>
-<footer class="footer"> 
-    <div class="container">
-    <center>
-        <p>Copyright &copy Lifestyle Store. All Rights Reserved. | Contact Us: +383 999 999</p>
-    </center>
-    </div>
-</footer>
