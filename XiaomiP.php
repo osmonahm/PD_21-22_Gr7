@@ -1,5 +1,6 @@
 <?php 
 session_start();
+require 'check_if_added.php';
 require('header.php');
 ?>
 

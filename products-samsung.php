@@ -1,5 +1,5 @@
 <?php
- require('check_if_added.php');
+ //require('check_if_added.php');
 ?>
 <head>
     <link rel="shortcut icon" href="img/lifestyleStore.png" />

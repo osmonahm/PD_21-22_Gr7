@@ -1,5 +1,5 @@
 <?php
- require('check_if_added.php');
+ //require('check_if_added.php');
 ?>
 <head>
     <link rel="shortcut icon" href="img/lifestyleStore.png" />
@@ -36,7 +36,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=9" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=9" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -64,7 +64,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=10" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=10" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -91,7 +91,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=11" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=11" class="btn btn-block btn-primary" name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -118,7 +118,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=12" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=12" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -147,7 +147,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=13" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=13" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -174,7 +174,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=14" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=14" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -201,7 +201,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=15" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=15" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
@@ -228,7 +228,7 @@
                                     echo '<a href="#" class=btn btn-block btn-success disabled>Added to cart</a>';
                                 }else{
                                     ?>
-                                    <a href="cart_add.php?id=16" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Add to cart</a>
+                                    <a href="cart_add.php?id=16" class="btn btn-block btn-primary " name="add" value="add" class="btn btn-block btr-primary">Shto në shportë</a>
                                     <?php
                                 }
                             }
