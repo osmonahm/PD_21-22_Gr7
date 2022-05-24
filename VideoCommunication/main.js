@@ -19,6 +19,12 @@ if (!firebase.apps.length) {
 }
 const firestore = firebase.firestore();
 
+const data = {}
+const offers = []
+
+
+console.log(firestore)
+
 const servers = {
   iceServers: [
     {
@@ -45,6 +51,10 @@ const hangupButton = document.getElementById('hangupButton');
 // 1. Setup media sources
 
 webcamButton.onclick = async () => {
+  if(localStream !== null)
+    localStream = null
+  
+
   localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
   remoteStream = new MediaStream();
 
@@ -65,12 +75,15 @@ webcamButton.onclick = async () => {
 
   callButton.disabled = false;
   answerButton.disabled = false;
-  webcamButton.disabled = true;
+  webcamButton.disabled = false;
 };
+
+
 
 // 2. Create an offer
 callButton.onclick = async () => {
   // Reference Firestore collections for signaling
+  
   const callDoc = firestore.collection('calls').doc();
   const offerCandidates = callDoc.collection('offerCandidates');
   const answerCandidates = callDoc.collection('answerCandidates');
