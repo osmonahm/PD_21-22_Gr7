@@ -7,7 +7,7 @@
 <html>
     <head>
         <link rel="shortcut icon" href="img/lifestyleStore.png" />
-        <title>Lifestyle Store</title>
+        <title>PhoneShop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- latest compiled and minified CSS -->
@@ -31,7 +31,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p>You have been logged out. <a href="login.php">Login again.</a></p>
+                                <p>Ju jeni shkyçur. <a href="login.php">Kyçu perseri.</a></p>
                             </div>
                         </div>
                     </div>
