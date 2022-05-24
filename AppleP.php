@@ -6,8 +6,17 @@ require('header.php');
 
 <div style ="height: 200px;"; id="bannerImage">
 <h1>PhoneShop - telefonat e fundit</h1>
-    <p>Koleksioni jone i Apple.</p>
+    <p>Koleksioni jonë i Apple.</p>
 
 </div>
 
 <?php require('products-apple.php'); ?>
+
+<br><br><br><br>
+<footer class="footer"> 
+    <div class="container">
+    <center>
+        <p>Copyright &copy PhoneShop. All Rights Reserved. | Contact Us: +383 999 999</p>
+    </center>
+    </div>
+</footer>

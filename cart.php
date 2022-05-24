@@ -26,7 +26,7 @@
 <html>
     <head>
         <link rel="shortcut icon" href="img/lifestyleStore.png" />
-        <title>Lifestyle Store</title>
+        <title>PhoneShop - Cart</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- latest compiled and minified CSS -->
@@ -48,7 +48,7 @@
                 <table class="table table-bordered table-striped">
                     <tbody>
                         <tr>
-                            <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
+                            <th>Numri i produktit</th><th>Emri i produktit</th><th>Çmimi</th><th></th>
                         </tr>
                        <?php 
                         $user_products_result=mysqli_query($con,$user_products_query) or die(mysqli_error($con));
@@ -59,11 +59,11 @@
                          ?>
                         <tr>
                         <th><?php echo $counter ?></th><th><?php echo $row['itemName']?></th><th><?php echo $row['price']?></th>
-                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
+                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Fshij</a></th>
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>
-                        <th></th><th>Total</th><th> <?php echo $sum;?> € </th><th><a href="success.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
+                        <th></th><th>Totali</th><th> <?php echo $sum;?> € </th><th><a href="success.php?id=<?php echo $user_id?>" class="btn btn-primary">Konfirmo porosinë</a></th>
                         </tr>
                     </tbody>
                 </table>
@@ -71,6 +71,9 @@
             <br><br><br><br><br><br><br><br><br><br>
            <footer class="footer"> 
                <div class="container">
+               <center>
+                   <p>Copyright &copy PhoneShop. All Rights Reserved. | Contact Us: +383 999 999</p>
+               </center>
                </div>
            </footer>
         </div>
