@@ -1,6 +1,6 @@
 <?php
     session_start();
-   require 'check_if_added.php';
+    require 'check_if_added.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,8 +32,7 @@
             <?php include('products-samsung.php'); ?>
             <?php include('products-apple.php'); ?>
             <?php include('products-xiaomi.php'); ?>
-
-            <br><br><br><br><br><br><br><br>
+            <br><br><br><br>
            <footer class="footer"> 
                <div class="container">
                <center>
