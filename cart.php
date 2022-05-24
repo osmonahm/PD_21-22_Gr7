@@ -59,7 +59,7 @@
                          ?>
                         <tr>
                         <th><?php echo $counter ?></th><th><?php echo $row['itemName']?></th><th><?php echo $row['price']?></th>
-                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Shlyje</a></th>
+                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Fshij</a></th>
                         </tr>
                        <?php $counter=$counter+1;}?>
                         <tr>

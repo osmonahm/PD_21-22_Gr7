@@ -38,7 +38,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p>Porosia juaj është konfirmuar. Faleminderit që blini tek ne. <a href="products.php">Kliko këtu</a> që të blini një produkt tjeter.</p>
+                                <p>Porosia juaj është konfirmuar. Faleminderit që blini tek ne. <a href="products.php">Kliko këtu</a> që të blini një produkt tjetër.</p>
                             </div>
                         </div>
                     </div>

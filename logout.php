@@ -31,7 +31,7 @@
                         <div class="panel panel-primary">
                             <div class="panel-heading"></div>
                             <div class="panel-body">
-                                <p>Ju jeni shkyçur. <a href="login.php">Kyçu perseri.</a></p>
+                                <p>Ju jeni shkyçur. <a href="login.php">Kyçu përsëri.</a></p>
                             </div>
                         </div>
                     </div>
