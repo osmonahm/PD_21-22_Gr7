@@ -28,12 +28,13 @@ const servers = {
   iceCandidatePoolSize: 10,
 };
 
-// Global State
+
 const pc = new RTCPeerConnection(servers);
 let localStream = null;
 let remoteStream = null;
 
-// HTML elements
+
+
 const webcamButton = document.getElementById('webcamButton');
 // const voiceButton = document.getElementById('voiceButton');
 // const wButton = document.getElementById('wButton');
