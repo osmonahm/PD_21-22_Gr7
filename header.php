@@ -11,6 +11,7 @@
                        <a href="AppleP.php" class="navbar-brand">Apple</a>
                        <a href="SamsungP.php" class="navbar-brand">Samsung</a>
                        <a href="XiaomiP.php" class="navbar-brand">Xiaomi</a>
+                       <a href="https://localhost:3001/" class="navbar-brand">Video Call</a>
                    </div>
                    
                    <div class="collapse navbar-collapse" id="myNavbar">

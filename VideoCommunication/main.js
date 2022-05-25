@@ -3,15 +3,25 @@ import './style.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA29sfHd9kj2R4MkwfuOxNN7q2C5lsXFpA",
+//   authDomain: "webrtc-18570.firebaseapp.com",
+//   databaseURL: "https://webrtc-18570-default-rtdb.firebaseio.com",
+//   projectId: "webrtc-18570",
+//   storageBucket: "webrtc-18570.appspot.com",
+//   messagingSenderId: "468198801835",
+//   appId: "1:468198801835:web:65ca26cc74c109d82852ee",
+//   measurementId: "G-CWZXJNHMG5"
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyA29sfHd9kj2R4MkwfuOxNN7q2C5lsXFpA",
-  authDomain: "webrtc-18570.firebaseapp.com",
-  databaseURL: "https://webrtc-18570-default-rtdb.firebaseio.com",
-  projectId: "webrtc-18570",
-  storageBucket: "webrtc-18570.appspot.com",
-  messagingSenderId: "468198801835",
-  appId: "1:468198801835:web:65ca26cc74c109d82852ee",
-  measurementId: "G-CWZXJNHMG5"
+  apiKey: "AIzaSyA8WycXcmMxJtnfgfQk7FqLGqRo83PVlRQ",
+  authDomain: "pdgr7-80f78.firebaseapp.com",
+  projectId: "pdgr7-80f78",
+  storageBucket: "pdgr7-80f78.appspot.com",
+  messagingSenderId: "468386100556",
+  appId: "1:468386100556:web:ea4a2d99d372503b5f0be9",
+  measurementId: "G-BX5YCKV4FC"
 };
 
 if (!firebase.apps.length) {
