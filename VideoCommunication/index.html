@@ -7,7 +7,7 @@
     <title>WebRTC Demo</title>
   </head>
   <body>
-    <h2>1. Start your Webcam</h2>
+    <h2 id = "h">Komuniko me Video</h2>
     <div class="videos">
       <span>
         <h3>Local Stream</h3>
@@ -17,25 +17,29 @@
         <h3>Remote Stream</h3>
         <video id="remoteVideo" autoplay playsinline></video>
       </span>
-
-
     </div>
 
-    <button id="webcamButton">Start webcam</button>
-    <h2>2. Krijo nje thirrje te re</h2>
-    <button id="callButton" disabled>Create Call (offer)</button>
+    <button id="webcamButton"> Lesho Videon </button>
+    <!-- <button id="wButton">Video </button>
+    <button id="voiceButton">Zeri</button> -->
 
-    <h2>3. Bashkangjitju nje thirrjeje</h2>
+    
+
+    <h2>Komuniko me miqet</h2>
+    <button id="callButton" >Thirr</button>
+
+    <h2>Bashkangjitju nje thirrjeje</h2>
     <p>Pergjigju thirrjes prej nje tjeter pajisje ose shfletuesi/tab</p>
     
     <input id="callInput" />
-    <button id="answerButton" disabled>Pergjigju</button>
+    <button id="answerButton" >Pergjigju</button>
+<!-- 
+    <h2>Mbyll</h2>
 
-    <h2>4. Mbyll</h2>
-
-    <button id="hangupButton" disabled>Mbyll</button>
+    <button id="hangupButton">Mbyll  </button> -->
 
     <script type="module" src="/main.js"></script>
+
 
   </body>
 </html>

@@ -14,6 +14,7 @@ video {
   height: 30vw;
   margin: 2rem;
   background: #2c3e50;
+  border: 7px black solid;
 }
 
 .videos {
@@ -21,3 +22,18 @@ video {
   align-items: center;
   justify-content: center;
 }
+
+button {
+  background-color: lightblue;
+  height: 38px;
+  width: 100px;
+  border-radius: 5%;
+  font-weight: 600;
+}
+
+h2 {
+  border-bottom: 5px ridge ;
+  padding-top: 50px;
+}
+
+

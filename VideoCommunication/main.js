@@ -19,12 +19,6 @@ if (!firebase.apps.length) {
 }
 const firestore = firebase.firestore();
 
-const data = {}
-const offers = []
-
-
-console.log(firestore)
-
 const servers = {
   iceServers: [
     {
@@ -41,6 +35,8 @@ let remoteStream = null;
 
 // HTML elements
 const webcamButton = document.getElementById('webcamButton');
+// const voiceButton = document.getElementById('voiceButton');
+// const wButton = document.getElementById('wButton');
 const webcamVideo = document.getElementById('webcamVideo');
 const callButton = document.getElementById('callButton');
 const callInput = document.getElementById('callInput');
@@ -48,22 +44,21 @@ const answerButton = document.getElementById('answerButton');
 const remoteVideo = document.getElementById('remoteVideo');
 const hangupButton = document.getElementById('hangupButton');
 
-// 1. Setup media sources
 
 webcamButton.onclick = async () => {
   if(localStream !== null)
     localStream = null
   
 
-  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
   remoteStream = new MediaStream();
 
-  // Push tracks from local stream to peer connection
+  // Dergo tracks nga local stream ne lidhje
   localStream.getTracks().forEach((track) => {
     pc.addTrack(track, localStream);
   });
 
-  // Pull tracks from remote stream, add to video stream
+  // Merri tracks nga remote stream, dhe shtoi ne video stream
   pc.ontrack = (event) => {
     event.streams[0].getTracks().forEach((track) => {
       remoteStream.addTrack(track);
@@ -80,22 +75,22 @@ webcamButton.onclick = async () => {
 
 
 
-// 2. Create an offer
+
+
+// 2. Krijo nje thirrje
 callButton.onclick = async () => {
-  // Reference Firestore collections for signaling
-  
   const callDoc = firestore.collection('calls').doc();
   const offerCandidates = callDoc.collection('offerCandidates');
   const answerCandidates = callDoc.collection('answerCandidates');
 
   callInput.value = callDoc.id;
 
-  // Get candidates for caller, save to db
+  // Merr kandidate per thirrje dhe ruaji ne databaze
   pc.onicecandidate = (event) => {
     event.candidate && offerCandidates.add(event.candidate.toJSON());
   };
 
-  // Create offer
+  // Krijo thirrjen
   const offerDescription = await pc.createOffer();
   await pc.setLocalDescription(offerDescription);
 
@@ -106,7 +101,7 @@ callButton.onclick = async () => {
 
   await callDoc.set({ offer });
 
-  // Listen for remote answer
+  // Degjo per pergjigje
   callDoc.onSnapshot((snapshot) => {
     const data = snapshot.data();
     if (!pc.currentRemoteDescription && data?.answer) {
@@ -115,7 +110,7 @@ callButton.onclick = async () => {
     }
   });
 
-  // When answered, add candidate to peer connection
+  // Kur klikohet butoni pergjigju shto kandidatin ne thirrje
   answerCandidates.onSnapshot((snapshot) => {
     snapshot.docChanges().forEach((change) => {
       if (change.type === 'added') {
@@ -128,7 +123,7 @@ callButton.onclick = async () => {
   hangupButton.disabled = false;
 };
 
-// 3. Answer the call with the unique ID
+// Pergjigju thirrjes
 answerButton.onclick = async () => {
   const callId = callInput.value;
   const callDoc = firestore.collection('calls').doc(callId);
@@ -164,3 +159,5 @@ answerButton.onclick = async () => {
     });
   });
 };
+
+
