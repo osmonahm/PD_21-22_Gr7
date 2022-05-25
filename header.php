@@ -8,9 +8,10 @@
                        </button>
                        <a href="index.php" class="navbar-brand">Ballina</a>
                        <a href="products.php" class="navbar-brand">Të gjitha produktet</a>
-                       <a href="AppleP.php" class="navbar-brand">Apple</a>
-                       <a href="SamsungP.php" class="navbar-brand">Samsung</a>
-                       <a href="XiaomiP.php" class="navbar-brand">Xiaomi</a>
+                       <a href="apple-page.php" class="navbar-brand">Apple</a>
+                       <a href="samsung-page.php" class="navbar-brand">Samsung</a>
+                       <a href="xiaomi-page.php" class="navbar-brand">Xiaomi</a>
+                       <a href="https://localhost:3001/" class="navbar-brand">Video Call</a>
                    </div>
                    
                    <div class="collapse navbar-collapse" id="myNavbar">
