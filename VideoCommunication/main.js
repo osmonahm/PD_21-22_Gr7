@@ -50,7 +50,7 @@ webcamButton.onclick = async () => {
     localStream = null
   
 
-  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+  localStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
   remoteStream = new MediaStream();
 
   // Dergo tracks nga local stream ne lidhje
