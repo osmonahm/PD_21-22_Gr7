@@ -33,8 +33,7 @@
         );
 
         foreach ($products as $value) {
-            //$query = "insert ignore into items(id, itemName, price) values ('$value[3]', '$value[1]', '$value[2]')";
-            $query = "insert ignore into items(itemName, price) values ('$value[1]', '$value[2]')";
+            $query = "insert ignore into items(id, itemName, price) values ('$value[3]', '$value[1]', '$value[2]')";
             //die($user_registration_query);
             $result = mysqli_query($con, $query) or die(mysqli_error($con));
             //echo "Item successfully registered";
